@@ -185,7 +185,8 @@ public class WebsiteScraper {
 //   	    virginInfo.append("\n");
   	    
    	    if ((start > 0) && (end > 0)) {
-   	   	    rc.put("Charge Deducted", line.substring(start + srch.length(), end));
+   	   	     //rc.put("Charge Deducted", line.substring(start + srch.length(), end));
+		    rc.put("Payment Due", line.substring(start + srch.length(), end));
    	    }
 
    	    srch = "<h3>You will be charged on</h3><p>";

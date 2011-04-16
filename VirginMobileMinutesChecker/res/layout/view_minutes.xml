@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:stretchColumns="0,1"
-                android:id="@+id/minutes" >
+	<TableLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchColumns="0,1" android:id="@+id/tableLayout1" android:visibility="invisible">
+   		
+   		<TableLayout android:id="@+id/tableLayout2" android:layout_width="fill_parent" android:layout_height="75dip">
+	        <ProgressBar android:progress="0" style="?android:attr/progressBarStyleHorizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/pb_minutes" android:layout_marginTop="20dip" android:visibility="invisible">
+	        </ProgressBar>
+	        <TextView android:layout_width="wrap_content" android:id="@+id/min_value" android:text="" android:layout_height="wrap_content" android:layout_marginTop="50dip">
+	        </TextView>
         </TableLayout>
-        <!-- 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
-<TextView  
-	android:id="@+id/minutes"
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-   />
-   -->
-       <!--    android:text="@string/hello" -->
- 
-<!--  </LinearLayout> -->
+        
+        <TableLayout android:id="@+id/minutes" android:stretchColumns="0,1" android:layout_width="fill_parent" android:visibility="visible" android:layout_height="200dip">
+        	<TableRow android:id="@+id/TableRow01" android:layout_height="wrap_content" android:layout_width="fill_parent">
+      			<TextView android:id="@+id/TextView01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="">
+      			</TextView>
+      		</TableRow> 
+        </TableLayout>
+         
+ 	</TableLayout>
+    
